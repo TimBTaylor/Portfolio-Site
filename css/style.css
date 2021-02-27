@@ -10,6 +10,7 @@
   --sun-yellow: #edc655;
   --sun-light-yellow: #fcffad;
   --sun-orange: #f76414;
+  --link-github: #14a4f7;
 }
 
 body {
@@ -169,6 +170,14 @@ button:focus,
   width: 33%;
 }
 
+.standard-label {
+  display: block;
+}
+
+.contact-footer {
+  margin: 10px;
+}
+
 @supports (display: grid) {
   .grid {
     display: grid;
@@ -182,7 +191,7 @@ button:focus,
   background-color: lightgray;
   width: auto;
   min-height: auto;
-  margin: 0;
+  margin: 10px;
 }
 
 @media all and (max-width: 500px) {
