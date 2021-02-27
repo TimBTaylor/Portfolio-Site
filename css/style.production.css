@@ -199,6 +199,10 @@ button:focus,
   margin: 10px;
 }
 
+.work {
+  margin: 10px;
+}
+
 @supports (display: grid) {
   .grid {
     display: -ms-grid;
