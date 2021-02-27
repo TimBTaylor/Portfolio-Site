@@ -182,6 +182,10 @@ button:focus,
   margin: 10px;
 }
 
+.about {
+  text-decoration: underline;
+}
+
 @supports (display: grid) {
   .grid {
     display: grid;
