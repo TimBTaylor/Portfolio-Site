@@ -1,91 +1,120 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Tim Taylor - Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="portfolio_images/t-favicon.ico"/>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tim Taylor - Portfolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="portfolio_images/t-favicon.ico" />
+  </head>
 
-</head>
-
-<body>
-  <header class="page-header">
-      <p class="name"> Tim Taylor </p>
+  <body>
+    <header class="page-header">
+      <p class="name">Tim Taylor</p>
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
-           <li role="presentation">
-              <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-           </li >
-           <li role="presentation">
-              <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-           </li>
-           <li role="presentation">
-              <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-           </li>
-           <li>
-             <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
-           </li>
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Projects</a
+            >
+          </li>
         </ul>
-     </nav>
-   </header>
-   <section>
-     <div class="work">
-       <h1>Work</h1>
-     </div>
-     <div class="grid">
-       <div class="grid__item">
-         <h2>Project 1</h2>
-         <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Nam efficitur massa non venenatis tristique.
-         </p>
-         <a href="#">See project on Github</a>
-       </div>
-       <div class="grid__item">
-         <h2>Project 2</h2>
-         <p>
-            Duis tincidunt accumsan vehicula.
-            Sed non justo at magna porttitor ullamcorper.
-         </p>
-         <a href="#">See project on Github</a>
-       </div>
-       <div class="grid__item">
-         <h2>Project 3</h2>
-         <p>
-            Mauris ultrices ac nulla nec porta.
-            Nam faucibus tincidunt risus mattis tristique.
-         </p>
-         <a href="#">See project on Github</a>
-       </div>
-       <div class="grid__item">
-         <h2>Project 4</h2>
-         <p>
-           Etiam ultricies purus nisi, nec mollis elit suscipit id.
-           Ut lectus orci, rhoncus ac justo nec, aliquet fermentum odio.
-         </p>
-         <a href="#">See project on Github</a>
-       </div>
+      </nav>
+    </header>
+    <section>
+      <div class="work">
+        <h1>Here are some projects I have built</h1>
+      </div>
+      <div class="grid">
+        <div class="grid__item">
+          <h2 class="pokedex-title">Pokedex API</h2>
+          <img
+            src="portfolio_images/pokemon-ball.png"
+            alt="pokemon ball"
+            class="pokemonball"
+          />
+          <p>
+            The main objective of this project was to work with an external API
+            and the front-end framework bootstrap. The website loads the name of
+            the pokemon as well as an image, weight, and height. It was built
+            with HTML, CSS, Vanilla Javascript, Jquery, and Bootstrap. Visit the
+            site
+            <a href="https://timbtaylor.github.io/Pokedex/" target="_blank"
+              >here</a
+            >
+          </p>
+          <a href="https://github.com/TimBTaylor/Pokedex" target="_blank"
+            >See project on Github</a
+          >
+        </div>
+        <div class="grid__item">
+          <h2>Project 2</h2>
+          <p>
+            Duis tincidunt accumsan vehicula. Sed non justo at magna porttitor
+            ullamcorper.
+          </p>
+          <a href="#">See project on Github</a>
+        </div>
+        <div class="grid__item">
+          <h2>Project 3</h2>
+          <p>
+            Mauris ultrices ac nulla nec porta. Nam faucibus tincidunt risus
+            mattis tristique.
+          </p>
+          <a href="#">See project on Github</a>
+        </div>
+        <div class="grid__item">
+          <h2>Project 4</h2>
+          <p>
+            Etiam ultricies purus nisi, nec mollis elit suscipit id. Ut lectus
+            orci, rhoncus ac justo nec, aliquet fermentum odio.
+          </p>
+          <a href="#">See project on Github</a>
+        </div>
+      </div>
+    </section>
 
-     </div>
-
-
-   </section>
-
-   <footer class="page-footer">
-     <p>Find me on</p>
-     <div class="social-media">
-       <a href="https://github.com/TimBTaylor" target="_blank">
-         <img src="portfolio_images/github_icon.svg" alt="Github">
-       </a>
-       <a href="https://www.linkedin.com/in/tim-taylor-aaa970207/" target="_blank">
-         <img src="portfolio_images/linkedin_icon.svg" alt="LinkedIn">
-       </a>
-     </div>
-   </footer>
-</body>
-
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/TimBTaylor" target="_blank">
+          <img src="portfolio_images/github_icon.svg" alt="Github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tim-taylor-aaa970207/"
+          target="_blank"
+        >
+          <img src="portfolio_images/linkedin_icon.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

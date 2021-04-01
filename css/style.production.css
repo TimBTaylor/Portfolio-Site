@@ -7,14 +7,14 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
   --link: #357b70;
   --link-visited: #05676e;
   --link-active: #489c79;
-  --font: 'Lato', sans-serif;
+  --font: "Lato", sans-serif;
   --sun-yellow: #edc655;
   --sun-light-yellow: #fcffad;
   --sun-orange: #f76414;
@@ -115,8 +115,8 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -131,19 +131,19 @@ button:focus,
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
 .name {
-  font-family: cursive;
+  font-family: var(--font);
   font-size: 50px;
   margin: 0;
 }
@@ -212,14 +212,24 @@ button:focus,
   white-space: nowrap;
   border-right: 2px solid black;
   width: 12ch;
-  -webkit-animation:
-    type 2s steps(12),
-    blink-caret .75s step-end infinite;
-          animation:
-    type 2s steps(12),
-    blink-caret .75s step-end infinite;
+  -webkit-animation: type 2s steps(12), blink-caret 0.75s step-end infinite;
+  animation: type 2s steps(12), blink-caret 0.75s step-end infinite;
 }
 
+.pokedex-title {
+  color: rgb(223, 78, 58);
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.pokemonball {
+  height: 15%;
+  width: 15%;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
 @-webkit-keyframes type {
   0% {
     width: 0ch;
@@ -242,14 +252,22 @@ button:focus,
 
 @-webkit-keyframes blink-caret {
   from,
-  to { border-color: transparent }
-  50% { border-color: black; }
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 
 @keyframes blink-caret {
   from,
-  to { border-color: transparent; }
-  50% { border-color: black; }
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 
 @supports (display: grid) {

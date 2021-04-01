@@ -6,7 +6,7 @@
   --link: #357b70;
   --link-visited: #05676e;
   --link-active: #489c79;
-  --font: 'Lato', sans-serif;
+  --font: "Lato", sans-serif;
   --sun-yellow: #edc655;
   --sun-light-yellow: #fcffad;
   --sun-orange: #f76414;
@@ -122,7 +122,7 @@ button:focus,
 }
 
 .name {
-  font-family: cursive;
+  font-family: var(--font);
   font-size: 50px;
   margin: 0;
 }
@@ -191,9 +191,7 @@ button:focus,
   white-space: nowrap;
   border-right: 2px solid black;
   width: 12ch;
-  animation:
-    type 2s steps(12),
-    blink-caret .75s step-end infinite;
+  animation: type 2s steps(12), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes type {
@@ -207,8 +205,13 @@ button:focus,
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
 }
 
 @supports (display: grid) {
